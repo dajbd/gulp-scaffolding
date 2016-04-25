@@ -1,4 +1,5 @@
 var isDev = false
+var port = 8080
 var isLivereload = false
     //var  isLivereload = true
 var gulp = require('gulp')
@@ -11,6 +12,7 @@ gulp.task('httpServer', function() {
     connect = require('gulp-connect')
 
     connect.server({
+        port: port,
         livereload: isLivereload,
         // dev-build 为了让server 访问到css
         root: ['src', 'dev-build']
