@@ -1,7 +1,7 @@
 var isDev = false
 var port = 8080
 var isLivereload = false
-    //var  isLivereload = true
+    // var  isLivereload = true
 var gulp = require('gulp')
 var connect //= require('gulp-connect')
 var watch // = require('gulp-watch')
@@ -119,7 +119,7 @@ gulp.task('dev', function(callback) {
     // console.log(process.argv[2])
 
     isDev = true
-    var devTask = ['lessDev', 'imageMinDev', 'watch', 'httpServer']
+    var devTask = ['lessDev', /*'imageMinDev',*/ 'watch', 'httpServer']
 
     if (isLivereload) {
         devTask.push('livereload')
